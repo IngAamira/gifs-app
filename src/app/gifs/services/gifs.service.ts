@@ -63,12 +63,6 @@ export class GifsService {
 
       });
 
-
-
-
-
-
   }
-
 
 }

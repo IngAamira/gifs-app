@@ -1,27 +1,64 @@
-# GifsApp
+# Gifs App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+This is an Angular application that allows users to search and view gifs using the Giphy API.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Gif Search:** Enables users to search for gifs using keywords.
+- **Tag History:** Displays a history of previous search tags.
+- **Lazy Image Loading:** Uses the `LazyImageComponent` to lazily load images when they become visible in the viewport.
 
-## Code scaffolding
+## Project Structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The project is organized into various components and services:
 
-## Build
+- **GifsService:** A service that interacts with the Giphy API to perform gif searches and manage tag history.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **SearchBoxComponent:** A search bar component that utilizes the `GifsService` to perform searches when the "Enter" key is pressed.
 
-## Running unit tests
+- **CardListComponent:** A component that displays a list of gifs and uses the `GifsService` to fetch the gif list.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **CardComponent:** An individual component that visually represents a gif.
 
-## Running end-to-end tests
+- **SidebarComponent:** A sidebar component that shows a history of tags and allows searches based on those tags.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **LazyImageComponent:** A component that lazily loads images when they become visible in the viewport.
 
-## Further help
+## Development
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js installed
+- Angular v17.0.0
+- Angular CLI installed
+
+## Contributing
+
+If you want to contribute to this project, follow these steps:
+
+1. Fork the repository
+2. Create a branch for your feature: `git checkout -b feature/new-feature`
+3. Make your changes and commit: `git commit -m "Add new feature"`
+4. Push your changes: `git push origin feature/new-feature`
+5. Open a Pull Request on GitHub
+
+## Installation
+
+1. Clone this repository: `git clone https://github.com/IngAamira/gifs-app.git`
+2. Navigate to the directory: `cd gifs-app`
+3. Install dependencies: `npm install`
+4. Start the application: `ng serve`
+
+## Usage
+
+Include any additional information on how to use the application, command-line arguments, or configuration options.
+
+## Troubleshooting
+
+Include common issues users might encounter and their solutions.
+
+## FAQ
+
+Answer frequently asked questions to help users better understand the project.

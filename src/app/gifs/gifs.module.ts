@@ -8,8 +8,6 @@ import { CardListComponent } from './components/card-list/card-list.component';
 import { HomePageComponent } from './pages/home/home-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 
-
-
 @NgModule({
   declarations: [
     CardComponent,
