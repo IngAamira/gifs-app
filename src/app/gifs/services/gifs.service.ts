@@ -45,7 +45,6 @@ export class GifsService {
     this.searchTag( this._tagsHistory[0] );
   }
 
-
   searchTag( tag: string ):void {
     if ( tag.length === 0 ) return;
     this.organizeHistory(tag);
@@ -57,10 +56,7 @@ export class GifsService {
 
     this.http.get<SearchResponse>(`${ this.serviceUrl }/search`, { params })
       .subscribe( resp => {
-
         this.gifList = resp.data;
-        // console.log({ gifs: this.gifList });
-
       });
 
   }
